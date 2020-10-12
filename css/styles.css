@@ -1,0 +1,138 @@
+/*
+coloors
+5B507A purple navy
+5B618A dark blue gray
+9EADC8 wild blue yonder
+B9E28C yellow green crayola
+D6D84F maximum green yellow
+*/
+/* Global Styles
+----------------------------*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+	color: #5B507A;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif; /*may require link*/
+	font-size: 18px;
+	line-height: 2.0;
+	font-weight: 600;
+	width: 1400px;
+
+}
+
+img{
+	width: 220px;
+}
+a {
+	color: #D6D84F;
+}
+a:hover {
+	text-decoration: none;
+}
+h1, h2{
+	font-family: 'Caveat', cursive; /*may require link*/
+	font-weight: 400;
+	margin: 10px;
+}
+h1 {
+	font-size: 80px;
+	line-height: 1;
+	padding: 30px 0 20px 0;
+}
+h2 {
+	/*margin: 0;*/
+	font-size: 35px;
+}
+
+.content-wrap{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+/* Profile
+----------------------------*/
+.profile {
+	background-color: #D6D84F;
+	text-align: center;
+}
+
+/* Projects
+----------------------------*/
+.projects{
+	background-color: #9EADC8;
+}
+.projects a {
+	background: #5B507A;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 8px;
+	display: inline-block;
+}
+.project-item {
+	overflow: hidden;
+	/*border-bottom: 1px dashed D6D84F;*/
+}
+.project-item img{
+	float: left;
+	margin-right: 20px;
+	/*padding: 25px 0;*/
+}
+h3 {
+	margin-top: 0;
+}
+/*.projects .btn {
+	color: #9EADC8;
+	background: #5B507A;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 8px;
+	display: inline-block;*/
+}
+.projects a:hover {
+	background: rgba(91,80,122,80%);
+}
+/* Work Experience
+----------------------------*/
+.work{
+	background-color: #B9E28C;
+}
+
+/* Education
+----------------------------*/
+.education {
+	background-color: #D6D84F;
+}
+/* Contact Info
+----------------------------*/
+footer {
+	background-color: #9EADC8; 
+	color: #5B507A;
+	text-align: center;
+}
+footer a {
+	color: #5B507A;
+	background: #B9E28C;
+	text-decoration: none;
+}
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.contact-list a {
+	padding: 15px;
+	display: inline-block;
+}
+/*a:visited {
+	color: green;
+}*/
