@@ -64,7 +64,8 @@ h2 {
 }
 
 .content-wrap {
-  width: 900px;
+  max-width: 800px;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -128,10 +129,21 @@ h3 {
   background-color: #b9e28c;
 }
 
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 /* Education
 ----------------------------*/
 .education {
-  background-color: #d6d84f;
+  background-image: url(joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+}
+
+.education p {
+  width: 60%;
 }
 /* Contact Info
 ----------------------------*/
