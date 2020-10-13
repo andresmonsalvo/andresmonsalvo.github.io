@@ -10,6 +10,7 @@ D6D84F maximum green yellow
 ----------------------------*/
 html {
 	box-sizing: border-box;
+	margin: 0;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -24,7 +25,8 @@ body {
 	font-size: 18px;
 	line-height: 2.0;
 	font-weight: 600;
-	width: 1400px;
+	/*width: 1400px;*/
+	background-size: auto;
 
 }
 
@@ -53,7 +55,7 @@ h2 {
 }
 
 .content-wrap {
-	width: 1800px;
+	/*width: 1800px;*/
 	margin: 0 auto;
 	padding: 20px 0;
 }
