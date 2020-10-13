@@ -53,9 +53,13 @@ h2 {
 }
 
 .content-wrap {
-	width: 1200px;
+	width: 1800px;
 	margin: 0 auto;
 	padding: 20px 0;
+}
+
+.centered {
+	text-align: center;
 }
 
 /* Profile
