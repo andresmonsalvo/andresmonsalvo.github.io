@@ -9,96 +9,107 @@ D6D84F maximum green yellow
 /* Global Styles
 ----------------------------*/
 html {
-	box-sizing: border-box;
-	margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-	color: #5B507A;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	font-family: 'Montserrat', sans-serif; /*may require link*/
-	font-size: 18px;
-	line-height: 2.0;
-	font-weight: 600;
-	/*width: 1400px;*/
-	background-size: auto;
-	background-position: center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
+  color: #5b507a;
+  margin: 0;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  padding: 0;
+  font-family: "Montserrat", sans-serif; /*may require link*/
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 600;
+  /*width: 1400px;*/
+  /*background-size: auto;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  /*height: 35vh;*/
 }
 
 img {
-	width: 220px;
+  width: 220px;
 }
 a {
-	color: #D6D84F;
+  color: #d6d84f;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
-h1, h2 {
-	font-family: 'Caveat', cursive; /*may require link*/
-	font-weight: 400;
-	margin: 10px;
+h1,
+h2 {
+  font-family: "Caveat", cursive; /*may require link*/
+  font-weight: 400;
+  margin: 10px;
 }
 h1 {
-	font-size: 80px;
-	line-height: 1;
-	padding: 30px 0 20px 0;
+  font-size: 80px;
+  line-height: 1;
+  padding: 30px 0 20px 0;
 }
 h2 {
-	/*margin: 0;*/
-	font-size: 35px;
+  /*margin: 0;*/
+  font-size: 35px;
 }
 
 .content-wrap {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 20px 0;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .centered {
-	text-align: center;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  font-size: 1.2em;
 }
 
 /* Profile
 ----------------------------*/
 .profile {
-	background-color: #D6D84F;
-	text-align: center;
+  background-color: #d6d84f;
+  text-align: center;
 }
 
 /* Projects
 ----------------------------*/
 .projects {
-	background-color: #9EADC8;
+  background-color: #9eadc8;
 }
 .projects a {
-	background: #5B507A;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 8px;
-	display: inline-block;
+  background: #5b507a;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 8px;
+  display: inline-block;
 }
 .project-item {
-	overflow: hidden;
-	/*border-bottom: 1px dashed D6D84F;*/
+  overflow: hidden;
+  /*border-bottom: 1px dashed D6D84F;*/
 }
 .project-item img {
-	float: left;
-	margin-right: 20px;
-	/*padding: 25px 0;*/
+  float: left;
+  margin-right: 20px;
+  /*padding: 25px 0;*/
 }
 h3 {
-	margin-top: 0;
+  margin-top: 0;
+  font-family: "Caveat", cursive;
 }
 /*.projects .btn {
 	color: #9EADC8;
@@ -106,43 +117,43 @@ h3 {
 	text-decoration: none;
 	border-radius: 4px;
 	padding: 8px;
-	display: inline-block;*/
-}
+	display: inline-block;
+}*/
 .projects a:hover {
-	background: rgba(91,80,122,80%);
+  background: rgba(91, 80, 122, 80%);
 }
 /* Work Experience
 ----------------------------*/
 .work {
-	background-color: #B9E28C;
+  background-color: #b9e28c;
 }
 
 /* Education
 ----------------------------*/
 .education {
-	background-color: #D6D84F;
+  background-color: #d6d84f;
 }
 /* Contact Info
 ----------------------------*/
 footer {
-	background-color: #9EADC8; 
-	color: #5B507A;
-	text-align: center;
+  background-color: #9eadc8;
+  color: #5b507a;
+  text-align: center;
 }
 footer a {
-	color: #5B507A;
-	background: #B9E28C;
-	text-decoration: none;
+  color: #5b507a;
+  background: #b9e28c;
+  text-decoration: none;
 }
 .contact-list {
-	list-style-type: none;
-	padding: 0;
-	display: flex;
-	justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 .contact-list a {
-	padding: 15px;
-	display: inline-block;
+  padding: 15px;
+  display: inline-block;
 }
 /*a:visited {
 	color: green;
