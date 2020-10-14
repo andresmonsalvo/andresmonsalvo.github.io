@@ -64,9 +64,9 @@ h2 {
 }
 
 .content-wrap {
-  max-width: 800px;
-  width: 85%;
-  margin: 0 auto;
+  max-width: 800px; /*first step to fluid layout, below 800 ensures same width as the container and elements wrap around*/
+  width: 85%; /*second step to fluid layout to leave space around edges*/
+  margin: 0 auto; /*the tird step requires media queries*/
   padding: 20px 0;
 }
 
