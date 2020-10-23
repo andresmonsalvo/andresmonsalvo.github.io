@@ -40,7 +40,6 @@ body {
 
 img {
   width: 220px;
-  align-content: center;
 }
 a {
   color: #d6d84f;
@@ -109,7 +108,7 @@ ul li {
   /*border-bottom: 1px dashed D6D84F;*/
 }
 .project-item img {
-  float: left;
+  float: center;
   margin-right: 20px;
   /*padding: 25px 0;*/
 }
@@ -142,7 +141,7 @@ h3 {
 /* Education
 ----------------------------*/
 .education {
-  background-image: url(joanna-kosinska-unsplash.jpg);
+  background-color: #D6D84F; /*image: url(joanna-kosinska-unsplash.jpg);*/
   background-size: cover;
   background-position: top right;
 }
