@@ -40,6 +40,7 @@ body {
 
 img {
   width: 220px;
+  align-content: center;
 }
 a {
   color: #d6d84f;
@@ -49,7 +50,7 @@ a:hover {
 }
 h1,
 h2 {
-  font-family: "Montserrat", cursive; /*may require link*/
+  font-family: "Montserrat", sans-serif; /*may require link*/
   font-weight: 400;
   margin: 10px;
 }
@@ -114,7 +115,7 @@ ul li {
 }
 h3 {
   margin-top: 0;
-  font-family: "Caveat", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 /*.projects .btn {
 	color: #9EADC8;
