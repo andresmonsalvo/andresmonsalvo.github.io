@@ -39,7 +39,9 @@ body {
 }
 
 img {
-  width: 220px;
+  width: 260px;
+  /*padding: 7px;*/
+  vertical-align: center;
 }
 a {
   color: #d6d84f;
@@ -81,7 +83,7 @@ ul {
 ul li {
   list-style-type: none;
   display: inline;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* Profile
@@ -102,6 +104,8 @@ ul li {
   border-radius: 4px;
   padding: 8px;
   display: inline-block;
+  /*width: 236px;
+  height: 156px;*/
 }
 .project-item {
   overflow: hidden;
@@ -109,7 +113,8 @@ ul li {
 }
 .project-item img {
   float: center;
-  margin-right: 20px;
+  /*align-self: center;*/
+  /*margin-right: 20px;
   /*padding: 25px 0;*/
 }
 h3 {
@@ -169,10 +174,11 @@ footer a {
   justify-content: center;
 }*/
 .contact-list a {
-  padding: 5px;
+  padding: 1px;
   display: inline-block;
   border: 2px solid #b9e28c;
   border-radius: 12px;
+  margin: 4px;
 }
 /*a:visited {
 	color: green;
@@ -202,7 +208,7 @@ footer a {
   }
 
   .contact-list a {
-    padding: 15px;
+    padding: 5px;
     display: inline-block;
     border: 2px solid #b9e28c;
     border-radius: 12px;
