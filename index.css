@@ -34,22 +34,13 @@ body {
   font-weight: 600;
 }
 
-
-
 .main-flex{
     display: flex;
     flex-flow: column-wrap;
     min-width: 0;
     align-items: center;
 }
-/*.section-flex{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex: 1 1 0;
-    min-width: 0;
-    height: 100%;
-}*/
+
 .development-flex{
     display: flex;
     /*justify-content: space-evenly;*/
@@ -58,11 +49,6 @@ body {
 .ul1 {
   width: 33%;
 }
-
-
-
-
-
 
 .box {
     height: 1px;
@@ -312,13 +298,13 @@ nav a {
 
 
 img {
-  width: 50%;
+  width: 75%;
   /*padding: 7px;*/
   vertical-align: center;
   display: block;
   margin: 0 auto;
-  /*padding: 5px;
-  background-color: #d6d84f;*/
+  /*padding: 5px;*/
+  background-color: blue;
   height: auto;
 }
 a {
