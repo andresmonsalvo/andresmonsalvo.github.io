@@ -1,6 +1,6 @@
 /*
-coloors
-5B507A purple navy
+colors
+#5B507A purple navy
 5B618A dark blue gray
 9EADC8 wild blue yonder
 B9E28C yellow green crayola
@@ -11,6 +11,12 @@ D6D84F maximum green yellow
 html {
   box-sizing: border-box;
   margin: 0;
+  /*height: 100%;*/
+   min-height: 100%;
+   background-color: #B9E28C;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
 }
 *,
 *:before,
@@ -21,51 +27,26 @@ html {
 body {
   color: #5b507a;
   margin: 0;
-  /*margin-left: auto;
-  margin-right: auto;*/
   padding: 0;
   font-family: "Montserrat", sans-serif; /*may require link*/
   font-size: 18px;
   line-height: 2;
   font-weight: 600;
-  /*width: 1400px;*/
-  /*background-size: auto;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;*/
-  /*height: 100%;*/
 }
 
 .box {
     height: 1px;
     width: 30px;
     /*animation: move cubic-bezier(.62,.15,.4,.9) 2s infinite alternate both;*/
-    animation: move 4s ease-in-out 4s infinite alternate both;
-    -webkit-animation: move 2s ease-in-out 1s infinite alternate both;
-    -ms-animation: move 2s ease-in-out 1s infinite alternate both;
-    -moz-animation: move 2s ease-in-out 1s infinite alternate both;
-    -o-animation: move 2s ease-in-out 1s infinite alternate both;
+    animation: move 4s ease-in-out 1s infinite alternate both;
+    -webkit-animation: move 4s ease-in-out 1s infinite alternate both;
+    -ms-animation: move 4s ease-in-out 1s infinite alternate both;
+    -moz-animation: move 4s ease-in-out 1s infinite alternate both;
+    -o-animation: move 4s ease-in-out 1s infinite alternate both;
 }
 
 .box-purple {
     background: #5B507A;
-    margin: 0;
-}
-
-.box-blue {
-    background: #738cff;
-    margin: 0;
-}
-
-.box-green {
-    background: #46ff36;
-    margin: 0;
-}
-
-.box-orange {
-    background: #ffaf24;
     margin: 0;
 }
 
@@ -113,8 +94,15 @@ nav a {
     width:100%;
     top:0;
 }
+
+.skills {
+  background-color: #d6d84f; 
+}
+
 /* Mobile menu */
-.menu {
+
+
+  .menu {
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -123,7 +111,7 @@ nav a {
   }
   /*adjusts active page text color to blue*/
   .active-page{
-    color: #678b99;
+    color: #5B507A;
   }
   .menu li a {
     display: block;
@@ -152,30 +140,10 @@ nav a {
     /* divider between buttons and menu links */
     border-bottom: 1px #444 solid;
   }
-  /* Submenu up from mobile screens */
-  .submenu {
-    display: none;
-  }
-  .submenu-active .submenu {
-    display: block;
-  }
-  .has-submenu i {
-    font-size: 12px;
-  }
-  .has-submenu > a::after {
-    font-size: 12px;
-    line-height: 16px;
-    color: white;
-    padding-left: 5px;
-  }
-  .subitem a {
-    padding: 10px 15px;
-  }
-  .submenu-active {
-    background-color: #46697d;
-    border-radius: 3px;
-  }
+ 
   /* Tablet menu */
+
+
   @media all and (min-width: 700px) {
     .menu {
       justify-content: center;
@@ -217,13 +185,26 @@ nav a {
       background:  rgb(70, 105, 125, 0.8);
       border-color:  #46697d;
     }
+    .section1{
+      min-height: 10vh;
+    }
+    .section2{
+      min-height: 40vh;
+    }
+    .section3{
+      min-height: 40vh;
+    }
   }
+
+
   /* Desktop menu */
+
+
   @media all and (min-width: 960px) {
     .menu {
       align-items: center;
       flex-wrap: nowrap;
-      background: none;
+      background: #9EADC8;
     }
     /*
     .logo {
@@ -253,16 +234,30 @@ nav a {
     .submenu-active {
       border-radius: 0;
     }
+    .section1{
+      min-height: 10vh;
+    }
+    .section2{
+      min-height: 40vh;
+    }
+    .section3{
+      min-height: 40vh;
+    }
   }
 
 
-/*XXXXXXX*/ 
+/* Overall */ 
 
 
 img {
-  width: 260px;
+  width: 50%;
   /*padding: 7px;*/
   vertical-align: center;
+  display: block;
+  margin: 0 auto;
+  /*padding: 5px;
+  background-color: #d6d84f;*/
+  height: auto;
 }
 a {
   color: #d6d84f;
@@ -273,7 +268,7 @@ a:hover {
 h1,
 h2 {
   font-family: "Montserrat", sans-serif; /*may require link*/
-  font-weight: 400;
+  font-weight: 700;
   margin: 10px;
 }
 h1 {
@@ -284,6 +279,10 @@ h1 {
 h2 {
   /*margin: 0;*/
   font-size: 35px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .content-wrap {
@@ -297,116 +296,39 @@ h2 {
   text-align: center;
 }
 
-ul {
-  padding-inline-start: 3px;
+.container {
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: space-around;
+}
+
+.section-flex {
+  padding-left: 10px;
+  display: inline-block;
+  flex-flow: wrap;
+  justify-content: space-around;
+  
 }
 
 ul li {
   list-style-type: none;
-  display: inline;
+  /*padding-inline-start: 3px;*/
   font-size: 1em;
-}
-
-/* Profile
-----------------------------*/
-.profile {
-  background-color: #d6d84f;
-  /*text-align: center;*/
-}
-
-/* Projects
-----------------------------*/
-.projects {
-  background-color: #9eadc8;
-}
-.projects a {
-  background: #5b507a;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 8px;
-  display: inline-block;
-  /*width: 236px;
-  height: 156px;*/
-}
-.project-item {
-  overflow: hidden;
-  /*border-bottom: 1px dashed D6D84F;*/
-}
-.project-item img {
-  float: center;
-  /*align-self: center;*/
-  /*margin-right: 20px;
-  /*padding: 25px 0;*/
-}
-h3 {
-  margin-top: 0;
-  font-family: "Montserrat", sans-serif;
-}
-/*.projects .btn {
-	color: #9EADC8;
-	background: #5B507A;
-	text-decoration: none;
-	border-radius: 4px;
-	padding: 8px;
-	display: inline-block;
-}*/
-.projects a:hover {
-  background: rgba(91, 80, 122, 80%);
-}
-/* Work Experience
-----------------------------*/
-.work {
-  background-color: #b9e28c;
-}
-
-/*.job-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}*/
-
-/* Education
-----------------------------*/
-.education {
-  background-color: #D6D84F; /*image: url(joanna-kosinska-unsplash.jpg);*/
-  background-size: cover;
-  background-position: top right;
-}
-
-.education p {
-  width: 60%;
-  color: #310aa5;
-}
-
-/* Contact Info
-----------------------------*/
-footer {
-  background-color: #9eadc8;
-  color: #5b507a;
-}
-footer a {
-  color: #5b507a;
-  background: #b9e28c;
-  text-decoration: none;
-}
-/*.contact-list {
-  list-style-type: none;
-  padding: 0;
   display: flex;
   justify-content: center;
-}*/
-.contact-list a {
-  padding: 1px;
-  display: inline-block;
-  border: 2px solid #b9e28c;
-  border-radius: 12px;
-  margin: 4px;
 }
-/*a:visited {
-	color: green;
-}*/
 
-/* Responsive
-----------------------------*/
+
+ul {
+  display: inline-block;
+  justify-content: center;
+  
+}
+
+
+/* Responsive ----------*/
+
+
 @media screen and (min-width: 650px) {
   .profile h1,
   .profile h2,
@@ -433,5 +355,11 @@ footer a {
     display: inline-block;
     border: 2px solid #b9e28c;
     border-radius: 12px;
+  }
+
+  .container {
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: space-around;
   }
 }
