@@ -5,8 +5,6 @@ coloors
 9EADC8 wild blue yonder
 B9E28C yellow green crayola
 D6D84F maximum green yellow
-FFE66D new yellow
-2F3061 new blue
 */
 /* Global Styles
 ----------------------------*/
@@ -15,7 +13,7 @@ html {
   margin: 0;
   /*height: 100%;*/
    min-height: 100%;
-   background-color: #2F3061;
+   background-color: #B9E28C;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -27,7 +25,7 @@ html {
 }
 
 body {
-  color: #FFE66D;
+  color: #5b507a;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif; /*may require link*/
@@ -53,7 +51,7 @@ body {
 }
 
 .box {
-    height: 4px;
+    height: 2px;
     width: 30px;
     /*animation: move cubic-bezier(.62,.15,.4,.9) 2s infinite alternate both;*/
     animation: move 4s ease-in-out 1s infinite alternate both;
@@ -112,9 +110,6 @@ nav a {
     width:100%;
     top:0;
 }
-.skills {
-  background-color: #2F3061; 
-}
 
 
 /* Mobile menu */
@@ -129,7 +124,7 @@ nav a {
   }
   /*adjusts active page text color to blue*/
   .active-page{
-    color: #FFE66D;
+    color: #5B507A;
   }
   .menu li a {
     display: block;
@@ -257,7 +252,7 @@ nav a {
     .menu {
       align-items: center;
       flex-wrap: nowrap;
-      background: #2F3061;
+      background: #9EADC8;
     }
     /*
     .logo {
@@ -303,7 +298,7 @@ nav a {
 
 
 img {
-  width: 50%;
+  width: 85%;
   /*padding: 7px;*/
   vertical-align: center;
   display: block;
@@ -351,35 +346,7 @@ h3 {
   text-align: center;
 }
 
-.container {
-  display: flex;
-  flex-flow: row-wrap;
-  justify-content: space-around;
-}
-
-.section-flex {
-  padding-left: 10px;
-  display: inline-block;
-  flex-flow: wrap;
-  justify-content: space-around;
-  
-}
-ul li {
-  list-style-type: none;
-  /*padding-inline-start: 3px;*/
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
-}
-
-
 ul {
-  display: inline-block;
-  justify-content: center;
-  
-}
-
-/*ul {
   padding-inline-start: 3px;
 }
 
@@ -387,13 +354,12 @@ ul li {
   list-style-type: none;
   display: inline;
   font-size: 1em;
-}*/
+}
 
 /* Profile
 ----------------------------*/
 .profile {
-  background-color: #FFE66D;
-  color: #2F3061;
+  background-color: #d6d84f;
   /*text-align: center;*/
   /*min-height: 800px;*/
 }
@@ -401,12 +367,12 @@ ul li {
 /* Contact Info
 ----------------------------*/
 footer {
-  background-color: #2F3061;
+  background-color: #9eadc8;
   color: #5b507a;
 }
 footer a {
-  color: #2F3061;
-  background: #FFE66D;
+  color: #5b507a;
+  background: #b9e28c;
   text-decoration: none;
 }
 /*.contact-list {
@@ -454,7 +420,7 @@ footer a {
   .contact-list a {
     padding: 5px;
     display: inline-block;
-    border: 2px solid #5B507A;
+    border: 2px solid #b9e28c;
     border-radius: 12px;
   }
 }
@@ -462,7 +428,7 @@ footer a {
 .image {
   opacity: 1;
   display: block;
-  width: 50%;
+  width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -487,9 +453,9 @@ footer a {
   opacity: 1;
 }
 
-/*.text {
+.text {
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-}*/
+}
